@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm /Users/adrianfernandez/Desktop/FanDental/README.md)",
+      "Bash(rm /Users/adrianfernandez/Desktop/FanDental/test.html)",
+      "Bash(grep:*)",
+      "Bash(git init:*)"
+    ],
+    "deny": []
+  }
+}
