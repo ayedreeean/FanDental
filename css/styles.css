@@ -688,52 +688,144 @@ section {
 }
 
 
-.about-grid {
+.about-dr-fan {
     display: grid;
-    grid-template-columns: 0.6fr 1fr;
-    gap: 3rem;
-    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-top: 3rem;
 }
 
-.about-image {
-    display: flex;
-    justify-content: center;
+.dr-fan-image-section {
+    position: relative;
 }
 
 .doctor-image {
-    width: 60%;
-    max-width: 300px;
+    width: 100%;
+    height: auto;
     border-radius: 12px;
-    background-color: var(--background-light);
-    object-fit: cover;
+    box-shadow: var(--shadow);
 }
 
-.about-content p {
-    color: var(--text-light);
-    margin-bottom: 1.5rem;
-    line-height: 1.8;
-    text-align: center;
+.credentials-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    margin-top: -3rem;
+    margin-left: 2rem;
+    margin-right: -2rem;
+    position: relative;
+    z-index: 1;
 }
 
-.about-features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+.credentials-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.credential-item {
+    display: flex;
     gap: 1rem;
-    margin-top: 2rem;
-    justify-items: center;
+    margin-bottom: 1rem;
 }
 
-.feature {
+.credential-item:last-child {
+    margin-bottom: 0;
+}
+
+.credential-item i {
+    color: var(--orange-accent);
+    font-size: 1.25rem;
+    width: 25px;
+    flex-shrink: 0;
+}
+
+.credential-item strong {
+    display: block;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.25rem;
+}
+
+.credential-item p {
+    font-size: 0.875rem;
+    color: var(--text-light);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.dr-fan-content h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.intro-text {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.philosophy-section,
+.personal-section {
+    margin-bottom: 2rem;
+}
+
+.philosophy-section h4,
+.personal-section h4 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
     display: flex;
     align-items: center;
-    gap: 0.75rem;
-    color: var(--text-dark);
-    justify-content: center;
+    gap: 0.5rem;
 }
 
-.feature i {
-    color: var(--primary-color);
-    font-size: 1.25rem;
+.philosophy-section i,
+.personal-section i {
+    color: var(--orange-accent);
+}
+
+.interests-list {
+    list-style: none;
+    padding-left: 1.5rem;
+}
+
+.interests-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+}
+
+.interests-list li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--orange-accent);
+    font-weight: bold;
+}
+
+.cta-message {
+    background: var(--background-light);
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.cta-message p {
+    font-style: italic;
+    font-size: 1.125rem;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.cta-message span {
+    color: var(--orange-accent);
+    font-weight: 600;
 }
 
 /* About The Clinic Section */
@@ -1267,15 +1359,23 @@ section {
     }
     
     
-    .about-grid,
-    .contact-grid {
+    .about-dr-fan {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
     
-    .about-image {
-        order: -1;
-        margin-bottom: 1rem;
+    .dr-fan-image-section {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .credentials-card {
+        margin: -2rem 1rem 2rem;
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
 
     .forms-grid {
