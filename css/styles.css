@@ -615,9 +615,6 @@ section {
     box-shadow: var(--shadow-hover);
 }
 
-.featured-testimonial {
-    border: 2px solid var(--orange-light);
-}
 
 .testimonial-header {
     display: flex;
