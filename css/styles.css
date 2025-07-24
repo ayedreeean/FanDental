@@ -623,13 +623,73 @@ section {
 
 /* About Section */
 .about {
-    text-align: center;
+    padding: 5rem 0;
+}
+
+.about-grid-with-map {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.about-main-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.about-map-sidebar {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.about-map-sidebar h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-dark);
+}
+
+.about-content h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-dark);
+}
+
+.clinic-info {
+    margin-bottom: 2rem;
+}
+
+.clinic-info p {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+}
+
+.clinic-info i {
+    color: var(--orange-accent);
+    width: 20px;
+    flex-shrink: 0;
+    margin-top: 0.25rem;
+}
+
+.map-container {
+    width: 100%;
+    height: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .about-grid {
     display: grid;
     grid-template-columns: 0.6fr 1fr;
-    gap: 4rem;
+    gap: 3rem;
     align-items: center;
 }
 
@@ -1004,16 +1064,6 @@ section {
     color: var(--text-dark);
 }
 
-.contact-map {
-    margin-top: 3rem;
-}
-
-.contact-map iframe {
-    border-radius: 12px;
-    box-shadow: var(--shadow);
-    width: 100%;
-    height: 400px;
-}
 
 /* Footer */
 .footer {
@@ -1199,6 +1249,16 @@ section {
         background-image: linear-gradient(135deg, rgba(61, 145, 201, 0.7) 0%, rgba(91, 163, 213, 0.7) 100%), url('../assets/images/hero-bg-mobile.jpg');
     }
 
+    .about-grid-with-map {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .about-main-content,
+    .about-map-sidebar {
+        padding: 1.5rem;
+    }
+    
     .about-grid,
     .contact-grid {
         grid-template-columns: 1fr;
