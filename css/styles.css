@@ -703,27 +703,33 @@ section {
     width: 100%;
     height: auto;
     border-radius: 12px;
+}
+
+.dr-name-quote-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 1.5rem;
+    margin: 0 1rem 1rem;
+    border-radius: 12px;
     box-shadow: var(--shadow);
-}
-
-.dr-name-quote {
     text-align: center;
-    margin-top: 1.5rem;
 }
 
-.dr-name-quote h3 {
+.dr-name-quote-overlay h3 {
     font-size: 1.5rem;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
     color: var(--text-dark);
 }
 
-.dr-name-quote p {
+.dr-name-quote-overlay p {
     font-style: italic;
     color: var(--text-light);
-    font-size: 1rem;
-    line-height: 1.6;
-    max-width: 90%;
-    margin: 0 auto;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
 }
 
 .credential-item {
@@ -763,11 +769,24 @@ section {
     color: var(--text-dark);
 }
 
-.intro-text {
-    font-size: 1.125rem;
-    line-height: 1.8;
-    color: var(--text-light);
+.local-roots-section,
+.education-section {
     margin-bottom: 2rem;
+}
+
+.local-roots-section h4,
+.education-section h4 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.local-roots-section i,
+.education-section i {
+    color: var(--orange-accent);
 }
 
 .philosophy-section,
@@ -810,15 +829,6 @@ section {
     font-weight: bold;
 }
 
-.credentials-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    margin: 2rem 0;
-    padding: 1.5rem;
-    background: var(--background-light);
-    border-radius: 12px;
-}
 
 /* About The Clinic Section */
 .about-clinic {
@@ -1361,9 +1371,9 @@ section {
         margin: 0 auto;
     }
     
-    .credentials-section {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+    .dr-name-quote-overlay {
+        margin: 0 0.5rem 0.5rem;
+        padding: 1rem;
     }
     
     .contact-grid {
