@@ -706,22 +706,24 @@ section {
     box-shadow: var(--shadow);
 }
 
-.credentials-card {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 12px;
-    box-shadow: var(--shadow);
-    margin-top: -3rem;
-    margin-left: 2rem;
-    margin-right: -2rem;
-    position: relative;
-    z-index: 1;
+.dr-name-quote {
+    text-align: center;
+    margin-top: 1.5rem;
 }
 
-.credentials-card h3 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
+.dr-name-quote h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
     color: var(--text-dark);
+}
+
+.dr-name-quote p {
+    font-style: italic;
+    color: var(--text-light);
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 .credential-item {
@@ -808,24 +810,14 @@ section {
     font-weight: bold;
 }
 
-.cta-message {
-    background: var(--background-light);
+.credentials-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
     padding: 1.5rem;
+    background: var(--background-light);
     border-radius: 12px;
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.cta-message p {
-    font-style: italic;
-    font-size: 1.125rem;
-    color: var(--text-dark);
-    margin-bottom: 0.5rem;
-}
-
-.cta-message span {
-    color: var(--orange-accent);
-    font-weight: 600;
 }
 
 /* About The Clinic Section */
@@ -1369,8 +1361,9 @@ section {
         margin: 0 auto;
     }
     
-    .credentials-card {
-        margin: -2rem 1rem 2rem;
+    .credentials-section {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
     
     .contact-grid {
